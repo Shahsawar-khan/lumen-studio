@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio — Lumen Studio</title>
+    <meta name="description" content="Explore our recent projects — branding, websites, apps and digital products built by Lumen Studio.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- ================= HEADER ================= -->
+    <header class="site-header">
+        <div class="container header-inner">
+
+            <a href="index.html" class="brand">
+                <span class="brand-mark">L</span>
+                <span>Lumen<span class="brand-dot">.</span></span>
+            </a>
+
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <label for="nav-toggle" class="nav-burger">
+                <span></span><span></span><span></span>
+            </label>
+
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="portfolio.html" class="active">Portfolio</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                    <span class="theme-icon-light">☀</span>
+                    <span class="theme-icon-dark">☾</span>
+                </button>
+
+                <a href="contact.html" class="btn btn-primary nav-cta">Start a Project</a>
+            </nav>
+
+        </div>
+    </header>
+
+    <!-- ================= PAGE HERO ================= -->
+    <section class="page-hero">
+        <div class="container page-hero-inner">
+            <span class="badge">
+                <span class="badge-dot"></span>
+                Our Portfolio
+            </span>
+            <h1 class="page-title">
+                Work we're <span class="text-accent">proud of</span>.
+            </h1>
+            <p class="page-lead">
+                A selection of projects we've designed and built — from
+                brand identities to full digital products.
+            </p>
+        </div>
+    </section>
+
+    <!-- ================= FILTER + PORTFOLIO ================= -->
+    <section class="section">
+        <div class="container">
+
+            <!-- Filter buttons -->
+            <div class="portfolio-filter" id="portfolioFilter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+                <button class="filter-btn" data-filter="branding">Branding</button>
+                <button class="filter-btn" data-filter="app">Mobile App</button>
+                <button class="filter-btn" data-filter="design">UI/UX</button>
+            </div>
+
+            <!-- Portfolio grid -->
+            <div class="portfolio-grid" id="portfolioGrid">
+
+                <article class="portfolio-item" data-category="web">
+                    <div class="portfolio-thumb">
+                        <img src="images/project-1.png" alt="Nova Finance dashboard">
+                        <div class="portfolio-overlay">
+                            <a href="#" class="portfolio-view" aria-label="View Nova Finance project">→</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <span class="portfolio-cat">Web App</span>
+                        <h3>Nova Finance Dashboard</h3>
+                        <p>Fintech dashboard redesign focused on clarity and speed.</p>
+                    </div>
+                </article>
+
+                <article class="portfolio-item" data-category="branding">
+                    <div class="portfolio-thumb">
+                        <img src="images/project-2.webp" alt="Bloom Skincare brand identity">
+                        <div class="portfolio-overlay">
+                            <a href="#" class="portfolio-view" aria-label="View Bloom Skincare project">→</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <span class="portfolio-cat">Branding</span>
+                        <h3>Bloom Skincare</h3>
+                        <p>Full brand identity and packaging for a natural skincare line.</p>
+                    </div>
+                </article>
+
+                <article class="portfolio-item" data-category="app">
+                    <div class="portfolio-thumb">
+                        <img src="images/project-3.png" alt="Orbit Travel mobile app">
+                        <div class="portfolio-overlay">
+                            <a href="#" class="portfolio-view" aria-label="View Orbit Travel project">→</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <span class="portfolio-cat">Mobile App</span>
+                        <h3>Orbit Travel</h3>
+                        <p>Travel booking app designed for effortless weekend getaways.</p>
+                    </div>
+                </article>
+
+                <article class="portfolio-item" data-category="design">
+                    <div class="portfolio-thumb">
+                        <img src="images/project-4.webp" alt="Vertex SaaS website">
+                        <div class="portfolio-overlay">
+                            <a href="#" class="portfolio-view" aria-label="View Vertex SaaS project">→</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <span class="portfolio-cat">UI / UX</span>
+                        <h3>Vertex SaaS Platform</h3>
+                        <p>Design system and marketing site for a B2B SaaS startup.</p>
+                    </div>
+                </article>
+
+                <article class="portfolio-item" data-category="web">
+                    <div class="portfolio-thumb">
+                        <img src="images/project-5.webp" alt="Fable coffee shop website">
+                        <div class="portfolio-overlay">
+                            <a href="#" class="portfolio-view" aria-label="View Fable Coffee project">→</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <span class="portfolio-cat">Web</span>
+                        <h3>Fable Coffee</h3>
+                        <p>Website and online ordering for a specialty coffee roaster.</p>
+                    </div>
+                </article>
+
+                <article class="portfolio-item" data-category="branding">
+                    <div class="portfolio-thumb">
+                        <img src="images/project-6.webp" alt="Northline brand identity">
+                        <div class="portfolio-overlay">
+                            <a href="#" class="portfolio-view" aria-label="View Northline project">→</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <span class="portfolio-cat">Branding</span>
+                        <h3>Northline</h3>
+                        <p>A bold identity for an outdoor gear brand built for explorers.</p>
+                    </div>
+                </article>
+
+                <article class="portfolio-item" data-category="app">
+                    <div class="portfolio-thumb">
+                        <img src="images/project-1.png" alt="Pulse fitness app">
+                        <div class="portfolio-overlay">
+                            <a href="#" class="portfolio-view" aria-label="View Pulse Fitness project">→</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <span class="portfolio-cat">Mobile App</span>
+                        <h3>Pulse Fitness</h3>
+                        <p>A friendly workout tracker for beginners and casual athletes.</p>
+                    </div>
+                </article>
+
+                <article class="portfolio-item" data-category="design">
+                    <div class="portfolio-thumb">
+                        <img src="images/project-2.webp" alt="Atlas travel UI design">
+                        <div class="portfolio-overlay">
+                            <a href="#" class="portfolio-view" aria-label="View Atlas UI project">→</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <span class="portfolio-cat">UI / UX</span>
+                        <h3>Atlas UI Kit</h3>
+                        <p>A comprehensive design system for travel and hospitality apps.</p>
+                    </div>
+                </article>
+
+                <article class="portfolio-item" data-category="web">
+                    <div class="portfolio-thumb">
+                        <img src="images/project-3.png" alt="Lighthouse analytics platform">
+                        <div class="portfolio-overlay">
+                            <a href="#" class="portfolio-view" aria-label="View Lighthouse project">→</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <span class="portfolio-cat">Web App</span>
+                        <h3>Lighthouse Analytics</h3>
+                        <p>Marketing analytics dashboard built for growing teams.</p>
+                    </div>
+                </article>
+
+            </div>
+
+            <!-- Empty state (hidden by default) -->
+            <p class="portfolio-empty" id="portfolioEmpty" hidden>
+                No projects found in this category yet.
+            </p>
+
+        </div>
+    </section>
+
+    <!-- ================= NUMBERS ================= -->
+    <section class="section section-tint">
+        <div class="container counters-grid">
+
+            <div class="counter" data-target="140">
+                <span class="counter-num">0</span>
+                <span class="counter-label">Projects Delivered</span>
+            </div>
+
+            <div class="counter" data-target="60">
+                <span class="counter-num">0</span>
+                <span class="counter-label">Happy Clients</span>
+            </div>
+
+            <div class="counter" data-target="12">
+                <span class="counter-num">0</span>
+                <span class="counter-label">Team Members</span>
+            </div>
+
+            <div class="counter" data-target="8">
+                <span class="counter-num">0</span>
+                <span class="counter-label">Years of Experience</span>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ================= CTA BANNER ================= -->
+    <section class="cta-banner">
+        <div class="container cta-inner">
+            <div>
+                <h2>Like what you see?</h2>
+                <p>Let's build something great together.</p>
+            </div>
+            <a href="contact.html" class="btn btn-light">
+                Start a Project
+                <span class="btn-arrow">→</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="site-footer">
+        <div class="container">
+
+            <div class="footer-grid">
+
+                <div class="footer-col footer-about">
+                    <a href="index.html" class="brand brand-footer">
+                        <span class="brand-mark">L</span>
+                        <span>Lumen<span class="brand-dot">.</span></span>
+                    </a>
+                    <p>
+                        A creative digital agency building brands, websites
+                        and products for modern businesses.
+                    </p>
+                    <ul class="footer-socials">
+                        <li><a href="#" aria-label="Twitter">Tw</a></li>
+                        <li><a href="#" aria-label="Instagram">Ig</a></li>
+                        <li><a href="#" aria-label="LinkedIn">In</a></li>
+                        <li><a href="#" aria-label="Dribbble">Dr</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html">Brand Identity</a></li>
+                        <li><a href="services.html">UI / UX Design</a></li>
+                        <li><a href="services.html">Web Development</a></li>
+                        <li><a href="services.html">Mobile Apps</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Get in Touch</h4>
+                    <ul>
+                        <li><a href="mailto:shahsawarbhai0315@gmail.com">shahsawarbhai0315@gmail.com</a></li>
+                        <li><a href="tel:+92 3159076769">+92 315 9076769</a></li>
+                        <li>Mardan, Pakistan</li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2026 Lumen Studio. All rights reserved.</p>
+                <p>Designed &amp; built with HTML, CSS &amp; JavaScript.</p>
+            </div>
+
+        </div>
+    </footer>
+
+    <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">↑</button>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
